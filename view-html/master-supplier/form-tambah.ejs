@@ -1,0 +1,46 @@
+<h2>Form Input Supplier Baru</h2>
+<hr>
+
+<% if (info_error) { %>
+    <strong style="color: red;">
+        <%= info_error.errno %> - <%= info_error.code %> <br>
+        <%= info_error.sqlMessage %> <br>
+    </strong>
+    <br>
+<% } %>
+
+<div class="row">
+    <div class="col-md-12 col-lg-6">
+        <form action="/master-supplier/proses-simpan" method="post">
+            <div class="mb-3">
+                <label class="form-label">Nama Supplier</label>
+                <input type="text" class="form-control" id="form_nama" name="form_nama" required>
+                    </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="text" class="form-control" id="form_email" name="form_email" required>
+                        </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Media Sosial</label>
+                                <input type="text" class="form-control" id="form_media_sosial" name="form_media_sosial" required>
+                            </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Kontak</label>
+                            <input type="text" class="form-control" id="form_kontak" name="form_kontak" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Alamat</label>
+                            <input type="text" class="form-control" id="form_alamat" name="form_alamat" required>
+                        </div>                    
+                        <button type="submit" class="btn btn-secondary mt-3">
+                        <i class="fa-solid fa-save me-1"></i> simpan
+                    </button>
+                </form>
+            </div>
+        </div>
+        
+            
+
+            
