@@ -30,8 +30,8 @@
 
             <div class="mb-3">
                 <label class="form-label">Kategori</label>
-                <select id="form_id" name="form_nama" class="form-select" required>
-                    <option value="">--pilih--</option>
+                <select id="form_kategori" name="form_kategori" class="form-select" required>
+                    <option value="">-</option>
                     <% for (const i in kategori) { %>
                         <option value="<%= kategori[i].id %>"><%= kategori[i].nama %></option>
                     <% } %>

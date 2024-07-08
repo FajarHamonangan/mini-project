@@ -1,5 +1,6 @@
 const m_produk  = require('../model/m_produk')
 const m_stok    = require('../model/m_stok')
+// const m_supplier = require('../model/m_supplier')
 
 module.exports =
 {
@@ -10,7 +11,8 @@ module.exports =
             konten      : 'stok/form-stok-masuk',
             uri_segment : req.path.split('/'),
             info_error  : null,
-            produk      : await m_produk.get_semua_produk()
+            produk      : await m_produk.get_semua_produk(),
+            // supplier    : await m_supplier.get_semua_supplier
         }
         res.render('template/struktur', dataview)
     },

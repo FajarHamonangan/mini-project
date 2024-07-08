@@ -46,7 +46,7 @@ module.exports =
             kode        : req.body.form_kode,
             nama        : req.body.form_nama,
             deskripsi   : req.body.form_deskripsi,
-            id_kategori : req.body.form_id_kategori,
+            id_kategori : req.body.form_kategori,
             dibuat_oleh : req.session.user.id,
             dibuat_kapan: moment().format('YYYY-MM-DD HH:mm:ss')
         }

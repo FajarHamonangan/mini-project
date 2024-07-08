@@ -1,5 +1,6 @@
 const m_produk  = require('../model/m_produk')
 const m_stok    = require('../model/m_stok')
+// const m_supplier = require('../model/m_supplier')
 const moment    = require('moment')
 moment.locale('id')
 
@@ -13,6 +14,7 @@ module.exports =
             uri_segment : req.path.split('/'),
             info_error  : null,
             produk      : await m_produk.get_semua_produk(),
+            // supplier    : await m_supplier.get_semua_supplier(),
             datalaporan : await m_stok.getAll_by_produk(req.query.kodeproduk),
             moment      : moment,
         }

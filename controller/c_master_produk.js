@@ -1,3 +1,4 @@
+const m_kategori = require('../model/m_kategori')
 const m_produk = require('../model/m_produk')
 
 module.exports =

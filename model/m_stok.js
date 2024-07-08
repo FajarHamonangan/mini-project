@@ -29,10 +29,10 @@ module.exports =
 
 
     input_stok_masuk: function(req, hasil_akhir) {
-        let masuk   = req.body.form_jumlah
         let data    = {
             kode_produk : req.body.form_produk,
             stok_masuk  : req.body.form_jumlah,
+            supplier    : req.body.form_supplier,
             stok_keluar : 0,
             stok_sisa   : hasil_akhir,
             keterangan  : req.body.form_keterangan,
